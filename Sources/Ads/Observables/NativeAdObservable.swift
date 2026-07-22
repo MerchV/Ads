@@ -16,6 +16,10 @@ import GoogleMobileAds
     private var adLoader: AdLoader?
     private var ads: [NativeAd] = []
     
+    public func start() {
+        MobileAds.shared.start()
+    }
+    
     public func load() {
         self.adLoader = AdLoader(adUnitID: TEST_AD_UNIT, rootViewController: nil, adTypes: [.native], options: nil)
         self.adLoader?.delegate = self
