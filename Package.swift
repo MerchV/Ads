@@ -5,7 +5,6 @@ import PackageDescription
 
 let package = Package(
     name: "Ads",
-    defaultLocalization: "en",
     platforms: [
         .macOS(.v26),
         .iOS(.v26)
